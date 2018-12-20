@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Welcome } from "./Welcome";
 import './App.css';
 
-class App extends Component {
-  constructor() {
-    super();
-
+export class App extends React.Component {
+  constructor(props) {
+    super(props);
     this.state = {
       names: ["Juan", "Pedro", "Germán"]
-    }
+    };
   }
-
+  
   render() {
     return (
       <div>
